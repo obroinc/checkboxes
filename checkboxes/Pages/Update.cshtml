@@ -1,0 +1,22 @@
+﻿@page "{id}"
+@model checkboxes.Pages.UpdateModel
+@{
+}
+
+<h2> Update the Colours</h2>
+
+<form method="post">
+
+    <input asp-for="Decor.ID" hidden>
+
+    <input asp-for="Decor.IsBlueChecked">
+    <label asp-for="Decor.IsBlueChecked"></label>
+
+    <input asp-for="Decor.IsRedChecked">
+    <label asp-for="Decor.IsRedChecked"></label>
+
+    <input asp-for="Decor.IsGreenChecked">
+    <label asp-for="Decor.IsGreenChecked"></label>
+
+    <button type="submit">Press Me</button>
+</form>

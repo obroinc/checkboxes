@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2> Create the Colours</h2>
+
+<form method="post">
+
+    <input asp-for="Decor.IsBlueChecked">
+    <label asp-for="Decor.IsBlueChecked"></label>
+
+    <input asp-for="Decor.IsRedChecked">
+    <label asp-for="Decor.IsRedChecked"></label>
+
+    <input asp-for="Decor.IsGreenChecked">
+    <label asp-for="Decor.IsGreenChecked"></label>
+
+    <button type="submit">Press Me</button>
+</form>
